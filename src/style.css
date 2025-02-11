@@ -7,7 +7,7 @@
 
     color-scheme: light dark;
     color: #f8f8f8;
-    background-color: #141414;
+    background-color: #0f0f0f;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -21,13 +21,8 @@
     --accent: #25e9aa;
 }
 
-a {
-  font-weight: 500;
-  color: var(--primary);
-  text-decoration: inherit;
-}
-a:hover {
-  color: var(--secondary);
+body {
+    margin: 0
 }
 
 body {
@@ -35,32 +30,57 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-size: 3.2em;
+    line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: inherit;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  cursor: pointer;
-  transition: all 0.1s
+a, button {
+    all: unset;
 }
-button:hover {
+
+.btn {
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: inherit;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    cursor: pointer;
+    transition: all .1s
+}
+.btn:hover {
     box-shadow: color-mix(in hsl, var(--primary), rgba(1, 1, 1, 0) 50%) 0 1px 30px;
     transition-duration: .1s;
 }
-button:active {
+.btn:active {
     box-shadow: color-mix(in hsl, var(--primary), rgba(1, 1, 1, 0) 25%) 0 1px 30px;
     transition-duration: .1s;
 }
-button:focus-visible {
+.btn:focus-visible {
     box-shadow: color-mix(in hsl, var(--primary), rgba(1, 1, 1, 0) 75%) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+.link {
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .1s;
+    cursor: pointer;
+    padding: 1rem;
+}
+.link:hover {
+    text-shadow: 0 0 1rem var(--primary);
+    transition-duration: .1s;
+}
+.link:active {
+    text-shadow: 0 0 2rem var(--primary);
+    transition-duration: .1s;
+}
+.link:focus-visible {
+    text-shadow: 0 0 .5rem var(--primary);
     transition-duration: .1s;
 }
 
@@ -69,40 +89,53 @@ button:focus-visible {
 }
 
 .container {
-
+    width: 100%;
+    margin: 0 auto;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: var(--black);
-    background-color: var(--white);
-  }
+    :root {
+        color: var(--black);
+        background-color: var(--white);
+    }
 
-  button {
+    .btn {
       color: var(--white);
-  }
+    }
 }
 
 @media only screen and (max-width: 600px) {
-
+    
 }
 
 @media only screen and (min-width: 600px) {
-
+    .container {
+        max-width: 540px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-
+    .container {
+        max-width: 720px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
-
+    .container {
+        max-width: 960px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-
+    .container {
+        max-width: 1100px;
+    }
 }
 
-@media only screen and (min-width: 1400) {
-
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1300px;
+    }
 }
+
+

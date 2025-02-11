@@ -5,7 +5,7 @@
 <template>
     <div class="container">
         <h1>Hello</h1>
-        <button>Press Me!</button>
+        <button class="btn">Press Me!</button>
     </div>
 </template>
 
