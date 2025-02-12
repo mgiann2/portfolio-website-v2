@@ -21,7 +21,7 @@
 }
 
 body {
-    margin: 0 1rem;
+    margin: 0;
 }
 
 a, button {
@@ -81,7 +81,10 @@ a, button {
 
 .container {
     width: 100%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 @media (prefers-color-scheme: light) {
@@ -91,40 +94,44 @@ a, button {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .btn {
-        font-size: .9rem;
-    }
-}
-
-@media only screen and (min-width: 600px) {
+@media (max-width: 475px) {
     .container {
-        max-width: 540px;
+        width: auto;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 475px) {
     .container {
-        max-width: 720px;
+        max-width: 455px;
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 640px) {
     .container {
-        max-width: 960px;
+        max-width: 620px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 768px) {
     .container {
-        max-width: 1100px;
+        max-width: 748px;
     }
 }
 
-@media only screen and (min-width: 1400px) {
+@media (min-width: 1024px) {
     .container {
-        max-width: 1300px;
+        max-width: 1004px;
     }
 }
 
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1260px;
+    }
+}
 
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1516px;
+    }
+}

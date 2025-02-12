@@ -14,7 +14,7 @@
 
 <style scoped>
 .hero-div {
-    margin: 8rem 0;
+    margin: 7rem 0;
 }
 
 .title {
@@ -23,45 +23,71 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 5rem;
+    font-size: 2rem;
     line-height: 1.2em;
     margin: 0;
 }
 
 .tag-line {
-    font-size: 2rem;
+    font-size: 1.2rem;
     line-height: 1.2em;
     font-weight: 400;
     margin-top: 1em;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 475px) {
     .title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .tag-line {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
-@media only screen and (min-width: 600px) {
-    
+@media (min-width: 640px) {
+    .title {
+        font-size: 3rem;
+    }
 }
 
-@media only screen and (min-width: 768px) {
-    
+@media (min-width: 768px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .tag-line {
+        font-size: 2.2rem;
+    }
 }
 
-@media only screen and (min-width: 992px) {
-    
+@media (min-width: 1024px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .tag-line {
+        font-size: 2.2rem;
+    }
 }
 
-@media only screen and (min-width: 1200px) {
-    
+@media (min-width: 1280px) {
+    .title {
+        font-size: 5rem;
+    }
+
+    .tag-line {
+        font-size: 3rem;
+    }
 }
 
-@media only screen and (min-width: 1400px) {
-    
+@media (min-width: 1536px) {
+    .title {
+        font-size: 5rem;
+    }
+
+    .tag-line {
+        font-size: 3rem;
+    }
 }
 </style>
