@@ -2,36 +2,26 @@
 
 :root {
     font-family: "Open Sans";
-    line-height: 1.5;
     font-weight: 400;
-
     color-scheme: light dark;
-    color: #f8f8f8;
-    background-color: #0f0f0f;
+    color: var(--white);
+    background-color: var(--black);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --black: #141414;
+    --black: #080808;
     --white: #f8f8f8;
+    --white2: #e8e8e8;
     --primary: #2fc477;
     --secondary: #8beab9;
-    --accent: #25e9aa;
+    --accent: #15f2b3;
 }
 
 body {
-    margin: 0
-}
-
-body {
-  
-}
-
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
+    margin: 0 1rem;
 }
 
 a, button {
@@ -39,14 +29,15 @@ a, button {
 }
 
 .btn {
+    color: var(--black);
     border-radius: 16px;
     border: none;
     outline: none;
-    padding: 1rem 1.5rem;
+    padding: 1em 1.2em;
     font-size: 1.1rem;
     font-weight: 500;
     font-family: inherit;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(90deg, var(--primary), var(--accent));
     cursor: pointer;
     transition: all .1s
 }
@@ -90,7 +81,7 @@ a, button {
 
 .container {
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 @media (prefers-color-scheme: light) {
@@ -98,14 +89,12 @@ a, button {
         color: var(--black);
         background-color: var(--white);
     }
-
-    .btn {
-      color: var(--white);
-    }
 }
 
 @media only screen and (max-width: 600px) {
-    
+    .btn {
+        font-size: .9rem;
+    }
 }
 
 @media only screen and (min-width: 600px) {
