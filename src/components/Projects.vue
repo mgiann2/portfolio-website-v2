@@ -36,48 +36,63 @@ const projects: Project[] = [{
 <template>
     <div class="container">
         <h1 class="section-title">Projects</h1>
-        <ProjectCard  v-for="project in projects" :project="project"/>
+        <div class="project-card-div">
+            <ProjectCard  v-for="project in projects" :project="project"/>
+        </div>
     </div>
 </template>
 
 <style scoped>
+.container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 .section-title {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.project-card-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @media (min-width: 475px) {
     .section-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (min-width: 640px) {
     .section-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (min-width: 768px) {
     .section-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (min-width: 1024px) {
     .section-title{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
 
 @media (min-width: 1280px) {
     .section-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
 
 @media (min-width: 1536px) {
     .section-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
 
