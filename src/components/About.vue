@@ -47,6 +47,7 @@ import profilePhoto from '../assets/profile.jpg'
 .about-content {
     margin-top: 0;
     margin-bottom: 3rem;
+    line-height: 2rem;
 }
 
 .custom-shape-divider-top-1739562910 {
@@ -73,6 +74,7 @@ img {
     border-radius: 16px;
     aspect-ratio: 1 / 1;
     max-width: 15rem;
+    width: auto;
     margin: 0 auto;
 }
 
