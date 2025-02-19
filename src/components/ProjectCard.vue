@@ -21,6 +21,11 @@ defineProps<{project: Project}>();
     border-radius: 16px;
     background-color: #101010;
     box-shadow: color-mix(in hsl, var(--primary), rgba(1, 1, 1, 0) 85%) 0 1px 50px;
+    transition: all .25s;
+}
+.project-div:hover {
+    box-shadow: color-mix(in hsl, var(--primary), rgba(1, 1, 1, 0) 75%) 0 1px 50px;
+    transition-duration: .25s;
 }
 
 .project-link {

@@ -40,19 +40,19 @@ a, button {
     font-family: inherit;
     background: linear-gradient(90deg, var(--primary), var(--accent));
     cursor: pointer;
-    transition: all .1s
+    transition: all .25s
 }
 .btn:hover {
     box-shadow: color-mix(in hsl, var(--primary), rgba(1, 1, 1, 0) 50%) 0 1px 30px;
-    transition-duration: .1s;
+    transition-duration: .25s;
 }
 .btn:active {
     box-shadow: color-mix(in hsl, var(--primary), rgba(1, 1, 1, 0) 25%) 0 1px 30px;
-    transition-duration: .1s;
+    transition-duration: .25s;
 }
 .btn:focus-visible {
     box-shadow: color-mix(in hsl, var(--primary), rgba(1, 1, 1, 0) 75%) 0 1px 30px;
-    transition-duration: .1s;
+    transition-duration: .25s;
 }
 
 .link {
@@ -65,15 +65,15 @@ a, button {
 }
 .link:hover {
     text-shadow: 0 0 1rem var(--primary);
-    transition-duration: .1s;
+    transition-duration: .25s;
 }
 .link:active {
     text-shadow: 0 0 2rem var(--primary);
-    transition-duration: .1s;
+    transition-duration: .25s;
 }
 .link:focus-visible {
     text-shadow: 0 0 .5rem var(--primary);
-    transition-duration: .1s;
+    transition-duration: .25s;
 }
 
 #app {
