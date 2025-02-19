@@ -19,7 +19,7 @@ defineProps<{project: Project}>();
     margin: 2rem auto;
     padding: 2rem;
     border-radius: 16px;
-    background-color: #101010;
+    background-color: var(--black2);
     box-shadow: color-mix(in hsl, var(--primary), rgba(1, 1, 1, 0) 85%) 0 1px 50px;
     transition: all .25s;
 }
@@ -70,6 +70,12 @@ img {
     border-radius: 16px;
     border: 2px solid var(--accent);
     aspect-ratio: 16 / 9;
+}
+
+@media (prefers-color-scheme: light) {
+    .project-div {
+        background-color: var(--white2);
+    }
 }
 
 @media (min-width: 475px) {

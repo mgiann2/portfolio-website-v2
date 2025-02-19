@@ -28,14 +28,15 @@
                     </svg>
                 </a>
             </ul>
-            <p>COPYRIGHT &copy; 2025 Matteo Giannone All rights reserverd.</p>
+            <p class="copyright">COPYRIGHT &copy; 2025 Matteo Giannone All rights reserverd.</p>
         </div>
     </footer>
 </template>
 
 <style scoped>
 .bg-color-div {
-    background-color: var(--accent);
+    background-color: var(--primary);
+    background-image: linear-gradient(180deg, var(--primary), var(--accent));
     position: relative;
 }
 
@@ -87,6 +88,20 @@
 
 .custom-shape-divider-top-1739981997 .shape-fill {
     fill: var(--black);
+}
+
+@media (prefers-color-scheme: light) {
+    .contact-header {
+        color: var(--white);
+    }
+
+    .copyright {
+        color: var(--white);
+    }
+
+    .custom-shape-divider-top-1739981997 .shape-fill {
+        fill: var(--white);
+    }
 }
 
 @media (min-width: 475px) {
