@@ -16,8 +16,12 @@
 <style scoped>
 nav {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     margin-top: 1rem;
+}
+
+.container {
+    box-sizing: border-box;
 }
 
 .logo {

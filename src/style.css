@@ -103,36 +103,36 @@ a, button {
 
 @media (min-width: 475px) {
     .container {
-        max-width: 455px;
+        max-width: 435px;
     }
 }
 
 @media (min-width: 640px) {
     .container {
-        max-width: 620px;
+        max-width: 600px;
     }
 }
 
 @media (min-width: 768px) {
     .container {
-        max-width: 748px;
+        max-width: 728px;
     }
 }
 
 @media (min-width: 1024px) {
     .container {
-        max-width: 1004px;
+        max-width: 984px;
     }
 }
 
 @media (min-width: 1280px) {
     .container {
-        max-width: 1260px;
+        max-width: 1240px;
     }
 }
 
 @media (min-width: 1536px) {
     .container {
-        max-width: 1516px;
+        max-width: 1496px;
     }
 }

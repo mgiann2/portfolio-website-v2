@@ -16,7 +16,7 @@ import profilePhoto from '../assets/profile.jpg'
         <div class="container">
             <div class="about-div">
                 <h1 class="greeting">Hi, my name is Matteo</h1>
-                <p class="about-content">I’m a recent graduate in Computer Science and Statistics from the University of Toronto, driven by an enthusiasm for software development and a deep curiosity for how things work. During my university career, I’ve worked on a variety of projects, including developing a full stack recipe web app with rich social features, building and training machine learning models, and writing my own terminal shell in C that supported basic UNIX commands. Outside of school, I am constantly exploring new technologies and topics, such as Vulkan for graphics programming, to become a more experienced and well-rounded developer.
+                <p class="about-content">I’m a recent graduate in Computer Science and Statistics from the University of Toronto, driven by an enthusiasm for software development and a deep curiosity for how things work. During my university career, I’ve worked on a variety of projects, including developing a full stack recipe web app with rich social features, building and training machine learning models, and writing my own terminal shell in C that supported basic UNIX commands. Outside of school, I am constantly exploring new technologies and topics to become a more experienced and well-rounded developer. Currently, I have been learning about graphics programming with the Vulkan graphics API.
                 </p>
                 <img :src="profilePhoto">
             </div>  
@@ -57,6 +57,7 @@ import profilePhoto from '../assets/profile.jpg'
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    top: -2px;
 }
 
 .custom-shape-divider-top-1739562910 svg {
