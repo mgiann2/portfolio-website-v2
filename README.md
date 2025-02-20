@@ -9,16 +9,18 @@ Check out website [here](https://www.matteogiannone.dev)
 
 ### Run development build
 
-`bash
-deno task dev`
+```bash
+deno task dev
+```
 
 ### Build production
 
-`bash
-deno task build`
+```bash
+deno task build
+```
 
 ### Preview production build
 
-`bash
-deno task preview`
-
+```bash
+deno task preview
+```
