@@ -4,9 +4,7 @@
 
 <template>
     <nav class="container" role="navigation" aria-label="main navigation">
-        <h1 class="logo">
-            MG
-        </h1>
+        <img class="logo" src="/logo.svg" alt="Logo">
         <div class="contact-container">
             <a href="mailto:matteogiannone24@gmail.com" class="btn">Get In Touch</a>
         </div>
@@ -25,14 +23,8 @@ nav {
 }
 
 .logo {
-    width: min-content;
-    letter-spacing: -5px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 3.2rem;
-    margin: 0;
+    width: 4rem;
+    height: 4rem;
 }
 
 .contact-container {
