@@ -4,7 +4,7 @@
 
 <template>
     <nav class="container" role="navigation" aria-label="main navigation">
-        <img class="logo" src="/logo.svg" alt="Logo">
+        <img class="logo" src="/logo.png" alt="Logo">
         <div class="contact-container">
             <a href="mailto:matteogiannone24@gmail.com" class="btn">Get In Touch</a>
         </div>
